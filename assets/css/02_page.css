@@ -1,0 +1,43 @@
+
+.over_box{overflow: auto;}
+/* .table_wrap{width: 95%; margin: 1rem; overflow-x: auto;}
+.scroll_table {min-width: 1300px; overflow: scroll;}
+.scroll{background-color: #f7f7f7; height:200px;}
+table {width:100%; border-spacing:0;}
+table th {border-bottom: none; background:#f7f7f7; border-bottom: 1px solid #e8e8e9;}
+.scroll_table table td {border-top: none; border-left:none; border-bottom: 1px solid #e8e8e9; padding: .624rem;}
+table tr td:last-child {border-right:none} */
+
+
+ul, li{list-style: none;}
+ul{margin: 0;}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5,.col-md-6,.col-md-7,.col-md-8,
+.col-md-9,.col-md-10,.col-md-11,.col-md-12{padding-left: 0 !important; 
+                                           padding-right: 0 !important;
+                                           }
+
+.top_v h1{text-align: center; }
+.top_v h1{padding: 4rem;}
+.top_v h5{font-size: 0.9rem;}
+.card{background-color: #f9f9f9 !important;}
+.mar_b{margin-bottom: 0.5rem !important;}
+
+.col-md-3{float: right;}
+.option_box{padding-bottom: 0; }
+
+.td_img img{width: 40%;}
+
+.kkk{min-width: 800px;}
+
+.btn_co{border-color: rgba(0,0,0,0);
+  background: #48b1b2 !important;
+  color: #fff;}
+
+.but_box{text-align: right; justify-content: flex-end;}
+
+
+@media screen and (max-width : 575px) {
+  .form-row div button{margin-top: 10px;}
+}

@@ -1,0 +1,89 @@
+
+.over_box{overflow: auto;}
+.table_wrap{width: 95%; margin: 1rem; overflow-x: auto;}
+.scroll_table {min-width: 1300px; overflow: scroll;}
+.scroll{background-color: #f7f7f7; height:350px;}
+table {width:100%; border-spacing:0;}
+table th {border-bottom: none; background:#f7f7f7; border-bottom: 1px solid #e8e8e9;}
+table td {border-top: none; border-left:none; border-bottom: 1px solid #e8e8e9; padding: .624rem;}
+table tr td:last-child {border-right:none}
+
+
+ul, li{list-style: none;}
+ul{margin: 0;}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5,.col-md-6,.col-md-7,.col-md-8,
+.col-md-9,.col-md-10,.col-md-11,.col-md-12{padding-left: 0 !important; 
+                                           padding-right: 0 !important;
+                                           }
+
+.top_v h1{text-align: center; }
+.top_v h1{padding: 4rem;}
+.top_v h5{font-size: 0.9rem;}
+.card{background-color: #f9f9f9 !important;}
+.mar_b{margin-bottom: 0.5rem !important;}
+
+.col-md-3{float: right;}
+.option_box{padding-bottom: 0; }
+
+.td_img img{width: 35%;}
+
+.fadeIn small{color:blue;}
+.ban-img{max-width: 40%; margin: auto;}
+
+
+.ad_make_p{margin-left: 8px;}
+.ad_make_p p{font-size: 1.25rem;}
+.ad_make_p p:nth-child(4), .ad_make_p p:nth-child(5){font-size: 0.8rem; color: blue;}
+.ad_make_p, .ad_make_img{float: left;}
+.row{flex-direction:row !important;}
+
+.ad_make_img{position: relative;}
+/* .ad_p{width: 100%; min-width: 400px; padding: 2rem;} */
+.ad_img img{position: absolute; top:50%; left: 50%;
+            transform: translate(-50%,-50%);
+            width: 54%; min-width: 250px;}
+.mmm{opacity: 0;}
+
+/*체크박스*/
+input[type=checkbox] {display: none;}
+input[type=checkbox]:checked + label {background:#8897aa; color: #fff;
+                                     border-radius: 4px;}
+.category_menu input[type=checkbox] {display: block;}
+input[type=checkbox]:checked + label {background: #8897aa; color: #fff;
+                                     border-radius: 4px;}
+.card_bg_c{background-color: #8897aa !important; color: #fff;}
+.card_body{padding: 1rem !important;}
+
+.category_menu{text-align: left !important; max-height: 530px; overflow: hidden; overflow-y: auto;
+    -ms-overflow-style: none;
+} 
+::-webkit-scrollbar {display: none;}
+
+.category_menu_tr:nth-child(2n-1){background-color: #f3f3f3;}
+
+
+.pt-4{padding-bottom: 1.5rem;}
+.temp_btn{min-width: 100px;}
+
+.te{padding: .875rem 0rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(24,28,33,0.06);
+  }
+
+.btn_co{border-color: rgba(0,0,0,0);
+  background: #48b1b2 !important;
+  color: #fff;}
+.but_box{text-align: right; justify-content: flex-end;}
+
+@media screen and (max-width : 575px) {
+  .mmm {max-height: 450px;}
+  .ad_p{width: 100%; padding: 0.5rem;}
+  .ad_make_p{margin-left:0;}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.ad_make_p{margin-left: 0;}
+.ad_p{padding: 10px;}
+}

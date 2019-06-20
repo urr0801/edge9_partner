@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="ko" class="default-style">
+
+<head>
+  <title>테스트 - 04 page</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="assets/css/04_page.css">
+
+  <!-- Load polyfills -->
+  <script src="assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <script src="assets/vendor/js/material-ripple.js"></script>
+
+  <script src="assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Theme settings -->
+  <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+  <script src="assets/vendor/js/theme-settings.js"></script>
+  <script>
+    window.themeSettings = new ThemeSettings({
+      cssPath: 'assets/vendor/css/rtl/',
+      themesPath: 'assets/vendor/css/rtl/'
+    });
+  </script>
+
+<link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/js/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/vendor/libs/clipboard/clipboard.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+
+  <!--page-->
+  <link rel="stylesheet" href="assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
+
+  <!-- smartWizard -->
+  <link rel="stylesheet" href="assets/vendor/libs/smartwizard/smartwizard.css">
+
+  <!-- dropzone -->
+  <link rel="stylesheet" href="assets/vendor/libs/dropzone/dropzone.css">
+  
+
+  
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+  
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+  
+      <!-- Layout sidenav -->
+      <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark">
+  
+        <!-- Brand demo (see assets/css/demo/demo.css) left 로고부분 -->
+        <div class="app-brand demo">
+          <span class="app-brand-logo demo bg-primary">
+            <img src="assets/img/E_logo.png">
+          </span>
+          <a href="#" class="app-brand-text demo sidenav-text font-weight-normal ml-2">EDGE9 Partner</a>
+          <a href="javascript:void(0)" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+            <i class="ion ion-md-menu align-middle"></i>
+          </a>
+        </div>
+  
+        <div class="sidenav-divider mt-0"></div>
+  
+        <!-- Links -->
+        <ul class="sidenav-inner py-1">
+  
+            <!-- Dashboards -->
+            <li class="sidenav-item open active">
+              <a href="01_page.html" class="sidenav-link"><i class="sidenav-icon ion ion-md-speedometer"></i>
+                <div>Dashboards</div>
+              </a>
+            </li>
+    
+            <li class="sidenav-divider mb-1"></li>
+  
+             <!--------광고 만들기----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-ios-add-circle d-block"></i>
+                <div>광고 만들기</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="04_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 광고 만들기</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+  
+            <!--------광고 관리----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-ios-photos"></i>
+                <div>광고 관리</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="02_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 소재 현황</div>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="05_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 타겟 설정</div>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="06_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 타겟 관리</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+  
+            <!--------광고 리포트----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-md-list-box d-block"></i>
+                <div>광고 리포트</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="07_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 광고 리포트</div>
+                  </a>
+                </li>
+               
+              </ul>
+            </li>
+            <!--------------------------------------------->
+            
+          </ul>
+      </div>
+      <!-- / Layout sidenav -->
+
+      <!-- Layout container -->
+      <div class="layout-container">
+        <!-- Layout navbar -->
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+
+          <!-- Brand demo (see assets/css/demo/demo.css) -->
+          <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+            <span class="app-brand-logo demo bg-primary">
+                <img src="assets/img/E_logo.png">
+            </span>
+            <span class="app-brand-text demo font-weight-normal ml-2">EDGE9</span>
+          </a>
+
+          <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+          <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+            <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+              <i class="ion ion-md-menu text-large align-middle"></i>
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+            <!-- Divider -->
+            <hr class="d-lg-none w-100 my-2">
+
+            <div class="navbar-nav align-items-lg-center">
+              <!-- Search 
+               <label class="nav-item navbar-text navbar-search-box p-0 active">
+                <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                <span class="navbar-search-input pl-2">
+                  <input type="text" class="form-control navbar-text mx-2" placeholder="Search..." style="width:200px">
+                </span>
+              </label> -->
+            </div>
+
+            <div class="navbar-nav align-items-lg-center ml-auto">
+           
+
+              <div class="demo-navbar-user nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                  <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                    <span class="px-1 mr-lg-2 ml-2 ml-lg-0">테스트 ID</span>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="javascript:void(0)" class="dropdown-item"><i class="ion ion-ios-log-out text-danger"></i> &nbsp; Log Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- / Layout navbar -->
+
+        <!-- Layout content -->
+        <div class="layout-content">
+
+          <!-- Content -->
+          <div class="container-fluid flex-grow-1 container-p-y">
+            <h4 class="d-flex justify-content-between align-items-center w-100 font-weight-bold py-3 mb-4">
+              <div>광고상품</div>
+            </h4>
+
+            <!-- Filters -->
+            <div class="ui-bordered px-4 pt-4 mb-4">
+              <div class="cui-example">
+                <form id="smartwizard-6" action="javascript:void(0)">
+                  <ul class="card px-4 pt-3 mb-3">
+                    <li><a href="#smartwizard-6-step-1" class="mb-3">
+                        <span class="sw-done-icon ion ion-md-checkmark"></span>
+                        <span class="sw-number">1</span>
+                        <div class="text-muted">광고상품</div><span class="small">광고 상품 선택</span>
+                        
+                      </a></li>
+                    <li><a href="#smartwizard-6-step-2" class="mb-3">
+                        <span class="sw-done-icon ion ion-md-checkmark"></span>
+                        <span class="sw-number">2</span>
+                        <div class="text-muted">광고설정</div><span class="small">광고 상품 설정</span>
+                      </a></li>
+                    <li><a href="#smartwizard-6-step-3" class="mb-3">
+                        <span class="sw-done-icon ion ion-md-checkmark"></span>
+                        <span class="sw-number">3</span>
+                        <div class="text-muted">캠페인설정</div><span class="small">캠페인 설정</span>
+                      </a></li>
+                    <li><a href="#smartwizard-6-step-4" class="mb-3">
+                        <span class="sw-done-icon ion ion-md-checkmark"></span>
+                        <span class="sw-number">4</span>
+                        <div class="text-muted">소재등록</div><span class="small">소재 등록 설정</span>
+                      </a></li>
+                  </ul>
+          
+                  <div class="mb-3">
+                    <div id="smartwizard-6-step-1" class="card animated fadeIn">
+                      <div class="card m-1 row">
+                        <div class="col-12 col-md-5 ad_make_p">
+                          <div class="p-5 ad_p">
+                            <h2 class="mb-4">이미지</h2>
+                            <p class="mb-2">모바일광고 기본 상품 입니다.</p>
+                            <p class="mb-4">여러 개 이미지를 각각 랜덤하게 노출 하는 방식</p>
+                            <p class="mb-1">손쉽고 편리하게 광고를 세팅할 수 있습니다.</p>
+                            <p class="mb-1">지금 바로 등록해 보세요!.</p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-5 ad_make_img">
+                            <img src="assets/img/banner.png" class="mmm">
+                          <div class="p-3 ad_img">
+                            <img src="assets/img/banner.png">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="smartwizard-6-step-2" class="card animated fadeIn">
+                      <div class="card-body">
+                        <div class="mb-3">광고상품명 / 설명</div>
+                        <div class="form-group">
+                          <label>광고상품명 <span class="text-danger">*</span></label>
+                          <input name="wizard-name" type="text" class="form-control required">
+                        </div>
+                        <div class="form-group">
+                          <label>광고상품 설명</label>
+                          <input name="wizard-address" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div id="smartwizard-6-step-3" class="card animated fadeIn">
+                      <div class="card-body">
+                        <div class="mb-3">캠페인명 / 설명</div>
+                        <div class="form-group">
+                          <label>캠페인명 <span class="text-danger">*</span></label>
+                          <input name="wizard-name" type="text" class="form-control required">
+                        </div>
+                        <div class="form-group">
+                          <label>캠페인 설명</label>
+                          <input name="wizard-address" type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div id="smartwizard-6-step-4" class="card animated fadeIn">
+                      <div class="card-body">
+                        <div class="mb-4"><h4>소재 등록 / 설정</h4></div>
+                        <div class="form-group">
+                          <label>소재명 <span class="text-danger">*</span></label>
+                          <input name="wizard-name" type="text" class="form-control required">
+                        </div>
+                        <div class="form-group">
+                          <label>소재 설명</label>
+                          <input name="wizard-address" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label class=" form-label">기간</label>
+                          <input type="text" id="daterange-1" value class="form-control form-control_width">
+                        </div>
+                        <div class="form-group">
+                          <label>캠페인 예산</label>
+                          <input name="wizard-address" type="text" class="form-control" placeholder="원">
+                        </div>
+                        <div class="form-group">
+                          <label>랜딩 URL <span class="text-danger">*</span></label>
+                          <input name="wizard-name" type="text" class="form-control required" placeholder="https://">
+                        </div>
+                        <div class="form-group">
+                          <label>App 실행 URL</label>
+                          <input name="wizard-address" type="text" class="form-control" placeholder="https://">
+                        </div>
+                        <div class="form-group">
+                          <label>이미지 등록 <span class="text-danger">*</span></label>
+                          <input type='file' id="imgInput" />
+                          <img id="image_section" src="#" alt="your image" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+          
+                <!-- Javascript -->
+                <script>
+                  $(function() {
+                    var $form = $('#smartwizard-6');
+                    var $btnFinish = $('<button class="btn-finish btn btn-primary hidden mr-2" type="button">Finish</button>');
+          
+                    // Set up validator
+                    $form.validate({
+                      errorPlacement: function errorPlacement(error, element) {
+                        $(element).parents('.form-group').append(
+                          error.addClass('invalid-feedback small d-block')
+                        )
+                      },
+                      highlight: function(element) {
+                        $(element).addClass('is-invalid');
+                      },
+                      unhighlight: function(element) {
+                        $(element).removeClass('is-invalid');
+                      },
+                      rules: {
+                        'wizard-confirm': {
+                          equalTo: 'input[name="wizard-password"]'
+                        }
+                      }
+                    });
+          
+                    // Initialize wizard
+                    $form
+                      .smartWizard({
+                        autoAdjustHeight: false,
+                        backButtonSupport: false,
+                        useURLhash: false,
+                        showStepURLhash: false,
+                        toolbarSettings: {
+                          toolbarExtraButtons: [$btnFinish]
+                        }
+                      })
+                      .on('leaveStep', function(e, anchorObject, stepNumber, stepDirection) {
+                        // stepDirection === 'forward' :- this condition allows to do the form validation
+                        // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+                        if (stepDirection === 'forward'){ return $form.valid(); }
+                        return true;
+                      })
+                      .on('showStep', function(e, anchorObject, stepNumber, stepDirection) {
+                        var $btn = $form.find('.btn-finish');
+          
+                        // Enable finish button only on last step
+                        if (stepNumber === 3) {
+                          $btn.removeClass('hidden');
+                        } else {
+                          $btn.addClass('hidden');
+                        }
+                      });
+          
+                    // Click on finish button
+                    $form.find('.btn-finish').on('click', function(){
+                      if (!$form.valid()){ return; }
+          
+                      // Submit form
+                      alert("Great! We're ready to submit form.");
+                      return false;
+                      });
+                    });
+
+                    // cui-ex
+                    $(function() {
+                      var isRtl = $('body').attr('dir') === 'rtl' || $('html').attr('dir') === 'rtl';
+                      
+                      $('#daterange-1').daterangepicker({
+                        opens: (isRtl ? 'left' : 'right'),
+                        showWeekNumbers: true
+                      });
+                    });
+
+                    // 미리보기 
+                    function readURL(input) {
+ 
+                      if (input.files && input.files[0]) {
+                          var reader = new FileReader();
+
+                          reader.onload = function (e) {
+                              $('#image_section').attr('src', e.target.result);
+                          }
+
+                          reader.readAsDataURL(input.files[0]);
+                      }
+                      }
+
+                      $("#imgInput").change(function(){
+                      readURL(this);
+                      });
+
+                </script>
+                <!-- / Javascript -->
+              </div>
+            </div>
+            <!-- Filters -->
+
+          </div>
+          <!-- / Content -->
+
+          <!-- Layout footer -->
+          <nav class="layout-footer footer bg-footer-theme">
+            <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+              <div class="pt-3 footer_txt">
+                <span class="footer-text font-weight-bolder">EDGE9</span> ©
+            </div>
+          </nav>
+          <!-- / Layout footer -->
+
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+
+
+  <!-- Demo -->
+  <script src="assets/js/demo.js"></script>
+
+  <!-- smartWizard -->
+  <script src="assets/vendor/libs/validate/validate.js"></script>
+  <script src="assets/vendor/libs/smartwizard/smartwizard.js"></script>
+
+  <!-- dropzone -->
+  <script src="assets/vendor/libs/dropzone/dropzone.js"></script>
+
+  <!-- page -->
+  <script>
+  
+  moment.locale('ko-kr');
+  
+
+  $('#date_range').daterangepicker({
+
+      ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      opens: ($('body').attr('dir') === 'rtl' || $('html').attr('dir') === 'rtl') ? 'right' : 'left',
+      locale: {
+          format: 'YYYY-MM-DD'
+      }
+  });
+  
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+.over_box{overflow: auto;}
+/* .table_wrap{width: 95%; margin: 1rem; overflow-x: auto;}
+.scroll_table {min-width: 1300px; overflow: scroll;}
+.scroll{background-color: #f7f7f7; height:250px;}
+table {width:100%; border-spacing:0;}
+table th {border-bottom: none; background:#f7f7f7; border-bottom: 1px solid #e8e8e9;}
+.scroll_table table td {border-top: none; border-left:none; border-bottom: 1px solid #e8e8e9; padding: .624rem;}
+table tr td:last-child {border-right:none} */
+
+
+ul, li{list-style: none;}
+ul{margin: 0;}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5,.col-md-7,.col-md-8,
+.col-md-9,.col-md-10,.col-md-11,.col-md-12{padding-left: 0 !important; 
+                                           padding-right: 0 !important;
+                                           margin-left: 5px;
+                                           margin-right: 5px;
+                                           margin-bottom: 1.5rem;
+                                           }
+
+.top_v h1{padding-top: 6rem; text-align: center; font-size: 3rem;}
+.top_v h5{font-size: 0.9rem;}
+.card{background-color: #f9f9f9 !important;}
+
+.col-md-3{float: right;}
+.option_box{padding-bottom: 0; }
+
+.btn_co{border-color: rgba(0,0,0,0);
+        background: #48b1b2 !important;
+        color: #fff;}
+.btn_jo{min-width: 70px;}
+
+.td{width: 80px;}
+.td input{margin-left: 1.3rem;}
+.th_click{min-width: 49px;}
+.th_report{min-width: 70px;}
+
+.but_box{text-align: right; justify-content: flex-end;}
+
+
+.td input[class="click_star"] + label {
+	display: inline-block;
+	width: 17px;
+  height: 17px;
+  margin-left: 1.25rem;
+  background-image: url('/assets/img/star_off.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+	cursor: pointer;
+}
+.td input[class="click_star"]:checked + label {
+  background-image: url('/assets/img/star_on.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.td input[class="click_star"] {
+	display: none;
+}
+
+
+@media screen and (max-width : 575px) {
+  .form-row div button{margin-top: 10px;}
+  .top_v h1{padding: 3rem 0 2rem;}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .form-row div button{margin-top: 10px;}
+  }

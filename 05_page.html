@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="ko" class="default-style">
+
+<head>
+  <title>테스트 - 05 page</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="assets/css/05_page.css">
+
+  <!-- Load polyfills -->
+  <script src="assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <script src="assets/vendor/js/material-ripple.js"></script>
+
+  <script src="assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Theme settings -->
+  <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+  <script src="assets/vendor/js/theme-settings.js"></script>
+  <script>
+    window.themeSettings = new ThemeSettings({
+      cssPath: 'assets/vendor/css/rtl/',
+      themesPath: 'assets/vendor/css/rtl/'
+    });
+  </script>
+
+<link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+<link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css">
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/js/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+
+  <!--page-->
+  <link rel="stylesheet" href="/assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
+
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+  
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+  
+      <!-- Layout sidenav -->
+      <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-dark">
+  
+        <!-- Brand demo (see assets/css/demo/demo.css) left 로고부분 -->
+        <div class="app-brand demo">
+          <span class="app-brand-logo demo bg-primary">
+            <img src="assets/img/E_logo.png">
+          </span>
+          <a href="#" class="app-brand-text demo sidenav-text font-weight-normal ml-2">EDGE9 Partner</a>
+          <a href="javascript:void(0)" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+            <i class="ion ion-md-menu align-middle"></i>
+          </a>
+        </div>
+  
+        <div class="sidenav-divider mt-0"></div>
+  
+        <!-- Links -->
+        <ul class="sidenav-inner py-1">
+  
+            <!-- Dashboards -->
+            <li class="sidenav-item open active">
+              <a href="01_page.html" class="sidenav-link"><i class="sidenav-icon ion ion-md-speedometer"></i>
+                <div>Dashboards</div>
+              </a>
+            </li>
+    
+            <li class="sidenav-divider mb-1"></li>
+  
+             <!--------광고 만들기----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-ios-add-circle d-block"></i>
+                <div>광고 만들기</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="04_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 광고 만들기</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+  
+            <!--------광고 관리----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-ios-photos"></i>
+                <div>광고 관리</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="02_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 소재 현황</div>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="05_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 타겟 설정</div>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="06_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 타겟 관리</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+  
+            <!--------광고 리포트----------->
+            <li class="sidenav-item">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-md-list-box d-block"></i>
+                <div>광고 리포트</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="07_page.html" class="sidenav-link"><i class=""></i>
+                    <div>- 광고 리포트</div>
+                  </a>
+                </li>
+               
+              </ul>
+            </li>
+            <!--------------------------------------------->
+            
+          </ul>
+      </div>
+      <!-- / Layout sidenav -->
+
+      <!-- Layout container -->
+      <div class="layout-container">
+        <!-- Layout navbar -->
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+
+          <!-- Brand demo (see assets/css/demo/demo.css) -->
+          <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+            <span class="app-brand-logo demo bg-primary">
+                <img src="assets/img/E_logo.png">
+            </span>
+            <span class="app-brand-text demo font-weight-normal ml-2">EDGE9</span>
+          </a>
+
+          <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+          <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+            <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:void(0)">
+              <i class="ion ion-md-menu text-large align-middle"></i>
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+            <!-- Divider -->
+            <hr class="d-lg-none w-100 my-2">
+
+            <div class="navbar-nav align-items-lg-center">
+              <!-- Search 
+               <label class="nav-item navbar-text navbar-search-box p-0 active">
+                <i class="ion ion-ios-search navbar-icon align-middle"></i>
+                <span class="navbar-search-input pl-2">
+                  <input type="text" class="form-control navbar-text mx-2" placeholder="Search..." style="width:200px">
+                </span>
+              </label> -->
+            </div>
+
+            <div class="navbar-nav align-items-lg-center ml-auto">
+           
+
+              <div class="demo-navbar-user nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                  <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                    <span class="px-1 mr-lg-2 ml-2 ml-lg-0">테스트 ID</span>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="javascript:void(0)" class="dropdown-item"><i class="ion ion-ios-log-out text-danger"></i> &nbsp; Log Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- / Layout navbar -->
+
+        <!-- Layout content -->
+        <div class="layout-content">
+
+          <!-- Content -->
+          <div class="container-fluid flex-grow-1 container-p-y">
+            <h4 class="d-flex justify-content-between align-items-center w-100 font-weight-bold py-3 mb-4">
+              <div>타겟팅 템플릿 설정</div>
+              <button type="button" onclick="location.href = '06_page.html' "class="btn btn-secondary ml-4 buttons col-3 col-md-2 temp_btn btn_co"> 타겟팅 관리 </button>
+            </h4>
+
+            <!-- Filters -->
+            <div class="ui-bordered px-4 pt-4 mb-4">
+              <div class="card m-1 row">
+                <div class="col-12 col-md-4 ad_make_p">
+                  <div class="mt-4 ad_p">
+                    <div class="card p-3 mb-2 card_bg_c">기본타겟팅</div>
+
+                    <div class="card mb-2">
+                      <div class="form-group pl-4 pr-4">
+                        <h6 class="te">타겟팅명</h6>
+                        <input name="wizard-address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="card mb-2">
+                      <h6 class="card-header">운영체제(os) 선택</h6>
+                      <div class="card-body">
+                          <input type="checkbox" class="check_btn" id="one" value=""  checked="" >
+                          <label for="one" class="p-2 pl-3 pr-3 bo">전체</label>
+
+                          <input type="checkbox" class="check_btn" id="two" value="">
+                          <label for="two" class="p-2 pl-3 pr-3 bo">Android</label>
+
+                          <input type="checkbox" class="check_btn" id="three" value="">
+                          <label for="three" class="p-2 pl-3 pr-3 bo">ios</label>
+                    
+                      </div>
+                    </div>
+
+                    <div class="card mb-2">
+                      <h6 class="card-header">통신사 선택</h6>
+                      <div class="card-body">
+                          <input type="checkbox" class="check_btn" id="four" value=""  checked="">
+                          <label for="four" class="p-2 pl-3 pr-3 bo">전체</label>
+
+                          <input type="checkbox" class="check_btn" id="five" value="" >
+                          <label for="five" class="p-2 pl-3 pr-3 bo">SKT</label>
+
+                          <input type="checkbox" class="check_btn" id="six" value="" >
+                          <label for="six" class="p-2 pl-3 pr-3 bo">KT</label>
+
+                          <input type="checkbox" class="check_btn" id="seven" value="" >
+                          <label for="seven" class="p-2 pl-3 pr-3 bo">LG U+</label>
+                    
+                      </div>
+                    </div>
+
+                    <div class="card mb-2">
+                      <h6 class="card-header">요일 / 시간</h6>
+                      <div class="card-body">
+                          <input type="checkbox" class="check_btn" id="w1" value=""  checked="">
+                          <label for="w1" class="p-1 pl-2 pr-2 bo">월</label>
+                          <input type="checkbox" class="check_btn" id="w2" value="" >
+                          <label for="w2" class="p-1 pl-2 pr-2 bo">화</label>
+                          <input type="checkbox" class="check_btn" id="w3" value="" >
+                          <label for="w3" class="p-1 pl-2 pr-2 bo">수</label>
+                          <input type="checkbox" class="check_btn" id="w4" value="" >
+                          <label for="w4" class="p-1 pl-2 pr-2 bo">목</label>
+                          <input type="checkbox" class="check_btn" id="w5" value="" >
+                          <label for="w5" class="p-1 pl-2 pr-2 bo">금</label>
+                          <input type="checkbox" class="check_btn" id="w6" value="" >
+                          <label for="w6" class="p-1 pl-2 pr-2 bo">토</label>
+                          <input type="checkbox" class="check_btn" id="w7" value="" >
+                          <label for="w7" class="p-1 pl-2 pr-2 bo">일</label>
+
+                          <div class="mb-2"></div>
+
+                          <input type="checkbox" class="check_btn" id="d1" value=""  checked="">
+                          <label for="d1" class="p-1 bo font_s">00</label>
+                          <input type="checkbox" class="check_btn" id="d2" value="" >
+                          <label for="d2" class="p-1 bo font_s">01</label>
+                          <input type="checkbox" class="check_btn" id="d3" value="" >
+                          <label for="d3" class="p-1 bo font_s">02</label>
+                          <input type="checkbox" class="check_btn" id="d4" value="" >
+                          <label for="d4" class="p-1 bo font_s">03</label>
+                          <input type="checkbox" class="check_btn" id="d5" value="" >
+                          <label for="d5" class="p-1 bo font_s">04</label>
+                          <input type="checkbox" class="check_btn" id="d6" value="" >
+                          <label for="d6" class="p-1 bo font_s">05</label>
+                          <input type="checkbox" class="check_btn" id="d7" value="" >
+                          <label for="d7" class="p-1 bo font_s">06</label>
+                          <input type="checkbox" class="check_btn" id="d8" value="" >
+                          <label for="d8" class="p-1 bo font_s">07</label>
+                          <input type="checkbox" class="check_btn" id="d9" value="" >
+                          <label for="d9" class="p-1 bo font_s">08</label>
+                          <input type="checkbox" class="check_btn" id="d10" value="" >
+                          <label for="d10" class="p-1 bo font_s">09</label>
+                          <input type="checkbox" class="check_btn" id="d11" value="" >
+                          <label for="d11" class="p-1 bo font_s">10</label>
+                          <input type="checkbox" class="check_btn" id="d12" value="" >
+                          <label for="d12" class="p-1 bo font_s">11</label>
+
+                          <div></div>
+
+                          <input type="checkbox" class="check_btn" id="n1" value="" >
+                          <label for="n1" class="p-1 bo font_s">12</label>
+                          <input type="checkbox" class="check_btn" id="n2" value="" >
+                          <label for="n2" class="p-1 bo font_s">13</label>
+                          <input type="checkbox" class="check_btn" id="n3" value="" >
+                          <label for="n3" class="p-1 bo font_s">14</label>
+                          <input type="checkbox" class="check_btn" id="n4" value="" >
+                          <label for="n4" class="p-1 bo font_s">15</label>
+                          <input type="checkbox" class="check_btn" id="n5" value="" >
+                          <label for="n5" class="p-1 bo font_s">16</label>
+                          <input type="checkbox" class="check_btn" id="n6" value="" >
+                          <label for="n6" class="p-1 bo font_s">17</label>
+                          <input type="checkbox" class="check_btn" id="n7" value="" >
+                          <label for="n7" class="p-1 bo font_s">18</label>
+                          <input type="checkbox" class="check_btn" id="n8" value="" >
+                          <label for="n8" class="p-1 bo font_s">19</label>
+                          <input type="checkbox" class="check_btn" id="n9" value="" >
+                          <label for="n9" class="p-1 bo font_s">20</label>
+                          <input type="checkbox" class="check_btn" id="n10" value="" >
+                          <label for="n10" class="p-1 bo font_s">21</label>
+                          <input type="checkbox" class="check_btn" id="n11" value="" >
+                          <label for="n11" class="p-1 bo font_s">22</label>
+                          <input type="checkbox" class="check_btn" id="n12" value="" >
+                          <label for="n12" class="p-1 bo font_s">23</label>
+                    
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- <div class="col-12 col-md-4 ad_make_img">
+                  <img src="assets/img/banner.png" class="mmm">
+                  <div class="p-3 ad_img">
+                    <img src="assets/img/banner.png">
+                  </div>
+                </div> -->
+
+                <div class="col-12 col-md-4 ad_make_p">
+                    <div class="mt-4 ad_p">
+                        <div class="card p-3 mb-2 card_bg_c">매체 타겟팅</div>
+
+                        <div class="card mb-2">
+                          <h6 class="card-header">매체 카테고리</h6>
+                          <div class="card-body category_menu">
+                              <div class="card-body-wrap">
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value=""  checked="">
+                                <div class="input-group-prepend ml-2">전체선택</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">게임</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">어린이,유아</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">뉴스,방송</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">소셜 네트워킹</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">유틸리티</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">날씨,교통</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">여성,쇼핑</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">엔터테이먼트</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">라이프스타일</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">스포츠,레저</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">자동차</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">영화</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">움악</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">책,문화</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">여행</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">디자인</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">경제,과학</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">캠페인명</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">캠페인명</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">캠페인명</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">캠페인명</div>
+                                </div>
+
+                                <div class="input-group category_menu_tr p-1">
+                                <input type="checkbox" class="category_btn mt-1" id="" value="" >
+                                <div class="input-group-prepend ml-2">캠페인명</div>
+                                </div>
+                              </div>
+                        
+                          </div>
+                        </div>
+
+                        <div class="card mb-2">
+                          <!-- <div class="row pt-2 pb-2">
+                            <button type="button" onclick="location.href = '#' "class="btn btn-secondary ml-4 buttons col-3 temp_btn"> reset </button>
+                            <button type="button" onclick="location.href = '#' "class="btn btn-secondary ml-2 buttons col-3 temp_btn"> 저장하기 </button>
+                            <button type="button" onclick="location.href = '#' "class="btn btn-secondary ml-2 buttons col-3 temp_btn"> 적용하기 </button>
+                          </div> -->
+                          <div class="col-12 mr-5 m-2 btn_box but_box">
+                            <button type="button" class="btn btn-secondary btn-sm"> reset </button>
+                            <button type="button" class="btn btn-secondary btn-sm"> 저장하기 </button>
+                            <button type="button" class="btn btn-secondary btn-sm mr-4"> 적용하기 </button>
+                          </div>
+                        </div>
+
+                      </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- Filters -->
+
+          </div>
+          <!-- / Content -->
+
+          <!-- Layout footer -->
+          <nav class="layout-footer footer bg-footer-theme">
+            <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+              <div class="pt-3 footer_txt">
+                <span class="footer-text font-weight-bolder">EDGE9</span> ©
+            </div>
+          </nav>
+          <!-- / Layout footer -->
+
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+
+  <!-- Demo -->
+  <script src="assets/js/demo.js"></script>
+
+  <!-- page -->
+  <script>
+  
+  moment.locale('ko-kr');
+
+  $('#date_range').daterangepicker({
+
+      ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      },
+      opens: ($('body').attr('dir') === 'rtl' || $('html').attr('dir') === 'rtl') ? 'right' : 'left',
+      locale: {
+          format: 'YYYY-MM-DD'
+      }
+  });
+  
+  </script>
+</body>
+
+</html>
