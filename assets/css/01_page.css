@@ -46,13 +46,13 @@ ul{margin: 0;}
 	width: 17px;
   height: 17px;
   margin-left: 1.25rem;
-  background-image: url('/edge9_partner/assets/img/star_off.png');
+  background-image: url('/assets/img/star_off.png');
   background-repeat: no-repeat;
   background-size: 100%;
 	cursor: pointer;
 }
 .td input[class="click_star"]:checked + label {
-  background-image: url('/edge9_partner/assets/img/star_on.png');
+  background-image: url('/assets/img/star_on.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
